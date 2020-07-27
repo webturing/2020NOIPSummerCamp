@@ -11,13 +11,13 @@ int dp[maxn][maxn];
 int n;
 
 int f(int x, int y) {//以a[x,y]为顶点的三角形的最大值
-    if(dp[x][y])return dp[x][y];
+    if (dp[x][y])return dp[x][y];
     if (x == n) {
-        return dp[x][y]=a[x][y];
+        return dp[x][y] = a[x][y];
     }
     int bottom = f(x + 1, y);
     int right = f(x + 1, y + 1);
-    return dp[x][y]=max(bottom, right) + a[x][y];
+    return dp[x][y] = max(bottom, right) + a[x][y];
 }
 
 int main() {
