@@ -1,18 +1,12 @@
-//
-// Created by ceo on 2020/7/19.
-//
-
 #include<bits/stdc++.h>
-
 using namespace std;
-
+using ll=long long;
+const char endl='\n';
 
 int main() {
-    int a[10] = {1, 3, 5, 7, 9, 2, 4, 6, 8, 0};
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
 
-    
-    for (auto &e:a) {
-        cout << e << " ";
-    }
     return 0;
 }
