@@ -15,11 +15,11 @@ int main() {
 //        cout<<a[0]<<" ";  pop_heap(a, a + 10 - i,greater<int>());
 //    }
     priority_queue<int> Q;
-    for(int i:a)Q.push(-i);
-    while(Q.size()){
-        cout<< -Q.top()<<" ";
+    for (int i:a)Q.push(-i);
+    while (Q.size()) {
+        cout << -Q.top() << " ";
         Q.pop();
     }
-    cout<<endl;
+    cout << endl;
     return 0;
 }

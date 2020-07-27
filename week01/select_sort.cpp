@@ -5,6 +5,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
+
 //选择排序：从无序区找一个最小值和无序区第一个元素置换
 void select_sort(int a[], int n) {
     for (int i = 0; i < n; i++) {

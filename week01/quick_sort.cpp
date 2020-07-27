@@ -16,16 +16,17 @@ int Partition(int *a, int left, int right) {
         if (i >= j)break;
         swap(a[i], a[j]);
     }
-    swap(a[left], a[i-1]);
-    return i-1;
+    swap(a[left], a[i - 1]);
+    return i - 1;
 
 
 }
+
 void quick_sort(int *a, int left, int right) {
     if (left >= right) return;
     int i = Partition(a, left, right);//把数组分为三部分 a[left]位于中间 左边都比它小，右边都比它大
     quick_sort(a, left, i - 1);//
-    quick_sort(a, i-1, right);
+    quick_sort(a, i - 1, right);
     return;
 }
 
