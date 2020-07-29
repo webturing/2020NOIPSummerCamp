@@ -29,6 +29,6 @@ int main() {
     auto pos = find_if(t.begin(), t.end(), [](char c) {
         return c != '0';
     });
-    cout << t.substr(pos-t.begin());
+    cout << t.substr(pos - t.begin());
     return 0;
 }
