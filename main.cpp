@@ -1,7 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 using ll=long long;
-const char endl='\n';
+#define endl '\n'
+#define FOR(i, x, y) for (decay<decltype(y)>::type i = (x), _##i = (y); i < _##i; ++i)
+#define FORD(i, x, y) for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
+template<typename T=int>
+inline T read() {
+    T x;
+    cin >> x;
+    return x;
+}
 
 int main() {
     ios::sync_with_stdio(false);
