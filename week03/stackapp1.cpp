@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-int data[100], top = -1;//栈的定义和初始化
+int data[100000], top = -1;//栈的定义和初始化
 
 int main() {
     cout << "stack empty?" << (top == -1) << endl;//stack empty空栈判断

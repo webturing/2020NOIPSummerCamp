@@ -3,7 +3,7 @@ using namespace std;
 int main()//2^n
 {
     int a[5]={1,2,3,4,5};
-    int b[5]={1,0,0,1,1};
+    int b[5]={0,0,0,0,0};
 
     for(b[0]=0;b[0]<=1;++b[0])
     for(b[1]=0;b[1]<=1;++b[1])
