@@ -21,12 +21,9 @@ char G[4][4] = {
         'M', 'N', 'O', 'P',
 };
 int book[4][4];
-int fx[4][2] = {{0,  1},
-                {0,  -1},
-                {1,  0},
-                {-1, 0}};
+int fx[4][2] = {0, 1, 0, -1, 1, 0, -1, 0};
 
-void bfs(int x, int y) {//O(m*n)
+void dfs(int x, int y) {
     queue<pair<int, int>> Q;
     Q.push(make_pair(x, y));
     book[x][y] = 1;
@@ -50,13 +47,6 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int area = 0;
-    for (int i = 0; i < 4; i++)
-        for (int j = 0; j < 4; j++) {
-            if (book[i][j] == 1 || G[i][j] == '/')continue;
-            ++area;
-            bfs(i, j);
-        }
-    cout << area << endl;
+    bfs(0, 0);
     return 0;
 }
